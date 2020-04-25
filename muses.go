@@ -17,7 +17,6 @@ import (
 	"go.uber.org/zap"
 	"os"
 	"path/filepath"
-	"syscall"
 )
 
 type Muses struct {
@@ -45,6 +44,9 @@ func init() {
 	}
 }
 
+type ConfCaller struct {
+	common.Caller
+}
 // 注册相应组件
 func Container(callerFuncs ...common.CallerFunc) (muses *Muses) {
 	allCallers := []common.CallerFunc{app.Register, logger.Register, prom.Register}

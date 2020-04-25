@@ -83,8 +83,7 @@ var (
 )
 
 func main() {
-	if err := muses.Container(
-		[]byte(cfg),
+	 app := muses.Container(
 		app.Register,
 		mysql.Register,
 		mongo.Register,
@@ -93,9 +92,8 @@ func main() {
 		logger.Register,
 		stat.Register,
 		gin.Register,
-	); err != nil {
-		panic(err)
-	}
+	);
+	app.SetCfg([]byte(cfg))
 
 	initCaller()
 	type User struct {
