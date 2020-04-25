@@ -16,7 +16,7 @@
 cd $GOPATH/src/github.com/i2eco/
 git clone https://github.com/<your-github-account>/muses
 cd caller
-git remote add upstream 'https://github.com/i2eco/muses'
+git remote add upstream 'https://github.com/pinke/muses'
 git config --global --add http.followRedirects 1
 ```
 
@@ -43,7 +43,7 @@ git push origin my-feature
 ### 提交 PR
 
 ```bash
-访问 https://github.com/i2eco/muses, 
+访问 https://github.com/pinke/muses, 
 
 点击 "Compare" 比较变更并点击 "Pull request" 提交 PR。
 ```

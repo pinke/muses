@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"github.com/BurntSushi/toml"
 	"github.com/gomodule/redigo/redis"
-	"github.com/i2eco/muses/pkg/cache/mixcache/gocache"
-	"github.com/i2eco/muses/pkg/cache/mixcache/leveldb"
-	mredis "github.com/i2eco/muses/pkg/cache/mixcache/redis"
-	"github.com/i2eco/muses/pkg/cache/mixcache/standard"
-	"github.com/i2eco/muses/pkg/common"
+	"github.com/pinke/muses/pkg/cache/mixcache/gocache"
+	"github.com/pinke/muses/pkg/cache/mixcache/leveldb"
+	mredis "github.com/pinke/muses/pkg/cache/mixcache/redis"
+	"github.com/pinke/muses/pkg/cache/mixcache/standard"
+	"github.com/pinke/muses/pkg/common"
 	"sync"
 )
 

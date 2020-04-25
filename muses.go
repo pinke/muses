@@ -5,13 +5,13 @@ import (
 	"errors"
 	"fmt"
 	ogin "github.com/gin-gonic/gin"
-	"github.com/i2eco/muses/pkg/app"
-	"github.com/i2eco/muses/pkg/cmd"
-	"github.com/i2eco/muses/pkg/common"
-	"github.com/i2eco/muses/pkg/logger"
-	"github.com/i2eco/muses/pkg/prom"
-	"github.com/i2eco/muses/pkg/server/gin"
-	"github.com/i2eco/muses/pkg/system"
+	"github.com/pinke/muses/pkg/app"
+	"github.com/pinke/muses/pkg/cmd"
+	"github.com/pinke/muses/pkg/common"
+	"github.com/pinke/muses/pkg/logger"
+	"github.com/pinke/muses/pkg/prom"
+	"github.com/pinke/muses/pkg/server/gin"
+	"github.com/pinke/muses/pkg/system"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
@@ -210,7 +210,7 @@ func (m *Muses) startFn(cobraCommand *cobra.Command, args []string) (err error) 
 		}
 
 		// 主服务器
-		
+
 		if err := m.router().Run(addr); err != nil {
 			logger.DefaultLogger().Error("Server err", zap.String("err", err.Error()))
 		}

@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/i2eco/muses/pkg/logger"
-	"github.com/i2eco/muses/pkg/token/standard"
+	"github.com/pinke/muses/pkg/logger"
+	"github.com/pinke/muses/pkg/token/standard"
 )
 
 // 如果你希望使用这个实现来作为token的实现，那么需要在配置文件里面设置：

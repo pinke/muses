@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/i2eco/muses/pkg/common"
-	"github.com/i2eco/muses/pkg/system"
+	"github.com/pinke/muses/pkg/common"
+	"github.com/pinke/muses/pkg/system"
 	"github.com/spf13/cobra"
 )
 

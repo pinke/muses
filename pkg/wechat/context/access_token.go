@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/i2eco/muses/pkg/wechat/util"
+	"github.com/pinke/muses/pkg/wechat/util"
 )
 
 const (

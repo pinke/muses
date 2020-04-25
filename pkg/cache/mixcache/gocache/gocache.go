@@ -2,7 +2,7 @@ package gocache
 
 import (
 	"encoding/json"
-	"github.com/i2eco/muses/pkg/cache/mixcache/standard"
+	"github.com/pinke/muses/pkg/cache/mixcache/standard"
 	"github.com/patrickmn/go-cache"
 	"github.com/pkg/errors"
 	"time"

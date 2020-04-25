@@ -1,9 +1,9 @@
 package token
 
 import (
-	"github.com/i2eco/muses/pkg/cache/redis"
-	"github.com/i2eco/muses/pkg/database/mysql"
-	"github.com/i2eco/muses/pkg/logger"
+	"github.com/pinke/muses/pkg/cache/redis"
+	"github.com/pinke/muses/pkg/database/mysql"
+	"github.com/pinke/muses/pkg/logger"
 )
 
 type Cfg struct {

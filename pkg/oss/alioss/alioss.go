@@ -2,7 +2,7 @@ package alioss
 
 import (
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/i2eco/muses/pkg/oss/standard"
+	"github.com/pinke/muses/pkg/oss/standard"
 	"io"
 	"io/ioutil"
 	"os"

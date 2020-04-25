@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/i2eco/muses"
-	mgin "github.com/i2eco/muses/pkg/server/gin"
+	"github.com/pinke/muses"
+	mgin "github.com/pinke/muses/pkg/server/gin"
 	"net/http"
 )
 

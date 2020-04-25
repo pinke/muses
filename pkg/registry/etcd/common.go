@@ -1,7 +1,7 @@
 package etcd
 
 import (
-	"github.com/i2eco/muses/pkg/common"
+	"github.com/pinke/muses/pkg/common"
 )
 
 type Cfg struct {

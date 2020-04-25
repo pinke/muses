@@ -3,8 +3,8 @@
 package ginzap
 
 import (
-	"github.com/i2eco/muses/pkg/logger"
-	"github.com/i2eco/muses/pkg/prom"
+	"github.com/pinke/muses/pkg/logger"
+	"github.com/pinke/muses/pkg/prom"
 	"net"
 	"net/http"
 	"net/http/httputil"

@@ -1,8 +1,8 @@
 package prom
 
 import (
-	"github.com/i2eco/muses/pkg/app"
-	"github.com/i2eco/muses/pkg/common"
+	"github.com/pinke/muses/pkg/app"
+	"github.com/pinke/muses/pkg/common"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

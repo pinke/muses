@@ -3,7 +3,7 @@ package github
 import (
 	"github.com/BurntSushi/toml"
 	"github.com/go-resty/resty/v2"
-	"github.com/i2eco/muses/pkg/common"
+	"github.com/pinke/muses/pkg/common"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/github"
 )

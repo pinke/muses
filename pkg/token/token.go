@@ -8,14 +8,14 @@ import (
 	"github.com/jinzhu/gorm"
 
 
-	mysqlToken "github.com/i2eco/muses/pkg/token/mysql"
-	redis2 "github.com/i2eco/muses/pkg/token/redis"
-	"github.com/i2eco/muses/pkg/token/standard"
+	mysqlToken "github.com/pinke/muses/pkg/token/mysql"
+	redis2 "github.com/pinke/muses/pkg/token/redis"
+	"github.com/pinke/muses/pkg/token/standard"
 
-	"github.com/i2eco/muses/pkg/cache/redis"
-	"github.com/i2eco/muses/pkg/common"
-	"github.com/i2eco/muses/pkg/database/mysql"
-	"github.com/i2eco/muses/pkg/logger"
+	"github.com/pinke/muses/pkg/cache/redis"
+	"github.com/pinke/muses/pkg/common"
+	"github.com/pinke/muses/pkg/database/mysql"
+	"github.com/pinke/muses/pkg/logger"
 )
 
 var defaultCallerStore = &callerStore{

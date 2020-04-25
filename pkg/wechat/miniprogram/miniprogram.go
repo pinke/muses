@@ -1,7 +1,7 @@
 package miniprogram
 
 import (
-	"github.com/i2eco/muses/pkg/wechat/context"
+	"github.com/pinke/muses/pkg/wechat/context"
 )
 
 // MiniProgram struct extends context

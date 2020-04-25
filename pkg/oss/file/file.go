@@ -2,7 +2,7 @@ package file
 
 import (
 	"errors"
-	"github.com/i2eco/muses/pkg/oss/standard"
+	"github.com/pinke/muses/pkg/oss/standard"
 	"io"
 	"io/ioutil"
 	"os"

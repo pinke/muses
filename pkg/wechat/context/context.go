@@ -1,7 +1,7 @@
 package context
 
 import (
-	"github.com/i2eco/muses/pkg/wechat/cache"
+	"github.com/pinke/muses/pkg/wechat/cache"
 	"net/http"
 	"sync"
 	"github.com/go-resty/resty/v2"
