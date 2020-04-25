@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/fvbock/endless"
 	ogin "github.com/gin-gonic/gin"
 	"github.com/i2eco/muses/pkg/app"
 	"github.com/i2eco/muses/pkg/cmd"
@@ -211,16 +210,8 @@ func (m *Muses) startFn(cobraCommand *cobra.Command, args []string) (err error) 
 		}
 
 		// 主服务器
-		endless.DefaultReadTimeOut = gin.Config().Muses.Server.Gin.ReadTimeout.Duration
-		endless.DefaultWriteTimeOut = gin.Config().Muses.Server.Gin.WriteTimeout.Duration
-		endless.DefaultMaxHeaderBytes = 100000000000000
-		server := endless.NewServer(addr, m.router())
-		server.BeforeBegin = func(addr string) {
-			logger.DefaultLogger().Info(fmt.Sprintf("Addr is %s", addr))
-			logger.DefaultLogger().Info(fmt.Sprintf("Actual pid is %d", syscall.Getpid()))
-		}
-
-		if err := server.ListenAndServe(); err != nil {
+		
+		if err := m.router().Run(addr); err != nil {
 			logger.DefaultLogger().Error("Server err", zap.String("err", err.Error()))
 		}
 	}
